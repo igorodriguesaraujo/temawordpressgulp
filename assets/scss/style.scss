@@ -1,0 +1,21 @@
+
+$vermelho:rgba(204,72,69,1);
+$roxo:rgba(135,1,173,1);
+$source:'Source Sans Pro', sans-serif!important;
+
+body {
+	font-family: $source; 
+	background: $roxo; 
+	background: linear-gradient(162deg, $roxo 0%, $vermelho 100%);
+}
+.text-light.opacity-5{
+	opacity:0.5!important;
+}
+.text-light::after {
+	content: '';
+    width: 90px;
+    height: 1px;
+    display: block;
+    margin: 20px auto 10px;
+    background-color: rgba(255,255,255,1)!important;
+}
